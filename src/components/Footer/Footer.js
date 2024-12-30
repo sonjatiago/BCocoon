@@ -1,17 +1,35 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Facebook, Instagram, Twitter, Mail, MapPin, Phone } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Instagram, Phone } from 'lucide-react';
+import { FaEtsy, FaPinterest } from 'react-icons/fa';
+import ScrollLink from '../../components/ScrollLink';
 import './Footer.css';
+import logo from '../../assets/logos/lg1.jpg';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: <Facebook size={20} />, url: 'https://facebook.com', label: 'Facebook' },
-    { icon: <Instagram size={20} />, url: 'https://instagram.com', label: 'Instagram' },
-    { icon: <Twitter size={20} />, url: 'https://twitter.com', label: 'Twitter' },
-    { icon: <Mail size={20} />, url: 'mailto:info@okoa.ee', label: 'Email' },
+    { 
+      icon: <Instagram size={24} />, 
+      url: 'https://www.instagram.com/b_cocoon_kids/', 
+      label: 'Instagram' 
+    },
+    { 
+      icon: <FaPinterest size={24} />, 
+      url: 'https://br.pinterest.com/bcocoonkids/', 
+      label: 'Pinterest' 
+    },
+    {
+      icon: <FaEtsy size={24} />,
+      url: 'https://www.etsy.com/shop/BCocoonkids?sort_order=date_desc&page=1#items',
+      label: 'Etsy'
+    },
+    { 
+      icon: <Phone size={24} />, 
+      url: 'https://api.whatsapp.com/message/LZ35Q24HS6C7I1?autoload=1&app_absent=0', 
+      label: 'WhatsApp' 
+    }
   ];
 
   const footerLinks = [
@@ -19,17 +37,9 @@ export const Footer = () => {
       title: 'Navigation',
       links: [
         { name: 'Home', path: '/' },
-        { name: 'Our Art', path: '/ourart' },
+        { name: 'Store', path: '/store' },
         { name: 'About Us', path: '/aboutus' },
         { name: 'Location', path: '/location' },
-      ],
-    },
-    {
-      title: 'Contact',
-      items: [
-        { icon: <Phone size={16} />, text: '+372 123 4567' },
-        { icon: <Mail size={16} />, text: 'info@okoa.ee' },
-        { icon: <MapPin size={16} />, text: 'Narva mnt 1, Tallinn' },
       ],
     },
     {
@@ -37,7 +47,6 @@ export const Footer = () => {
       links: [
         { name: 'Privacy Policy', path: '/privacy' },
         { name: 'Terms of Service', path: '/terms' },
-        { name: 'Shipping Policy', path: '/shipping' },
         { name: 'Returns', path: '/returns' },
       ],
     },
@@ -47,8 +56,7 @@ export const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-brand">
-          <h2>OKOA Gallery</h2>
-          <p>Contemporary Art in the Heart of Tallinn</p>
+          <img src={logo} alt="B Cocoon Kids Logo" className="footer-logo" />
           <div className="social-links">
             {socialLinks.map((social, index) => (
               <motion.a
@@ -71,24 +79,13 @@ export const Footer = () => {
           {footerLinks.map((section, index) => (
             <div key={index} className="footer-section">
               <h3>{section.title}</h3>
-              {section.links ? (
-                <ul>
-                  {section.links.map((link, linkIndex) => (
-                    <li key={linkIndex}>
-                      <Link to={link.path}>{link.name}</Link>
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <ul className="contact-items">
-                  {section.items.map((item, itemIndex) => (
-                    <li key={itemIndex}>
-                      <span className="contact-icon">{item.icon}</span>
-                      {item.text}
-                    </li>
-                  ))}
-                </ul>
-              )}
+              <ul>
+                {section.links.map((link, linkIndex) => (
+                  <li key={linkIndex}>
+                    <ScrollLink to={link.path}>{link.name}</ScrollLink>
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
@@ -96,8 +93,17 @@ export const Footer = () => {
 
       <div className="footer-bottom">
         <div className="footer-bottom-content">
-          <p>&copy; {currentYear} OKOA Gallery. All rights reserved.</p>
-          <p>Built with ❤️ in Estonia</p>
+          <p>&copy; {currentYear} B Cocoon Kids. All rights reserved.</p>
+          <p>
+            <a 
+              href="https://linktr.ee/bcocoonkids" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="linktree-link"
+            >
+              linktr.ee/bcocoonkids
+            </a>
+          </p>
         </div>
       </div>
     </footer>

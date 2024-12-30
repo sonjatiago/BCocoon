@@ -92,6 +92,7 @@
 /* Team Section */
 .team-section {
   margin-bottom: 5rem;
+  margin-top: -50px;
   text-align: center;
 }
 
@@ -110,6 +111,27 @@
   gap: 3rem;
   margin-top: 3rem;
 }
+
+/* Style for the member-photo div */
+.member-photo {
+  width: 300px; /* Adjust the size of the photo */
+  height: 300px; /* Ensure the height matches the width for a square image */
+  border-radius: 50%; /* Makes the image circular */
+  overflow: hidden; /* Ensures the image stays within the border radius */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Centers the photo horizontally */
+  margin-top: -90px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adds a soft shadow around the photo */
+}
+
+.member-photo img {
+  width: 100%; /* Makes the image take up the full width of the div */
+  height: 100%; /* Ensures the image fills the div without distortion */
+  object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+}
+
 
 /* Contact Section */
 .contact-section {

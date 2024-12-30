@@ -1,109 +1,77 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { Palette, Users, Sparkles } from 'lucide-react';
-import { Hero } from '../Hero/Hero';
-import backgroundVideo3 from '../../assets/background-video6.mp4';
-import backgroundVideo4 from '../../assets/background-video4.mp4';
-import backgroundVideo5 from '../../assets/background-video5.mp4';
+import { useNavigate } from 'react-router-dom';
 import './HomePage.css';
+import bannerImage from '../../assets/logos/banner.webp';
 
+// Import your product images
+import product1Image from '../../assets/Bbloomers/bk3.png';
+import product2Image from '../../assets/Doudou/dd1.jpg';
+import product3Image from '../../assets/Bshoes/bs1.jpg';
 
-export const HomePage = () => {
+const TopSellingProduct = ({ title, price, image }) => (
+  <div className="product-card">
+    <div className="product-info">
+      <div className="product-image-container">
+        <img
+          src={image}
+          alt={title}
+          className="product-image"
+        />
+      </div>
+      <h3 className="product-title">{title}</h3>
+      <p className="product-price">{price}€</p>
+    </div>
+  </div>
+);
 
-  const features = [
-    {
-      icon: <Palette size={32} />,
-      title: "Innovative Art",
-      description: "Experience pieces that push the boundaries of creativity.",
-      video: backgroundVideo3
-    },
-    {
-      icon: <Sparkles size={32} />,
-      title: "Inspiring Space",
-      description: "Immerse yourself in an environment of artistic brilliance.",
-      video: backgroundVideo4
-    },
-    {
-      icon: <Users size={32} />,
-      title: "Creative Community",
-      description: "Connect with like-minded creators and art enthusiasts.",
-      video: backgroundVideo5
-    }
+export function HomePage() {
+  const navigate = useNavigate();
+
+  const handleStoreClick = () => {
+    navigate('/store');
+  };
+
+  const topProducts = [
+    { id: 1, title: "Baby Bloomers", price: "46", image: product1Image },
+    { id: 2, title: "Baby Animal Doudou", price: "32", image: product2Image },
+    { id: 3, title: "Baby Shoes", price: "36", image: product3Image },
   ];
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        duration: 0.6,
-        staggerChildren: 0.2
-      }
-    }
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6
-      }
-    }
-  };
-
   return (
-    <div className="homepage">
-      <Hero />
-      
-      <motion.main
-        className="homepage-content"
-        initial="hidden"
-        animate="visible"
-        variants={containerVariants}
-      >
+    <div className="container">
+      {/* Banner Section */}
+      <div className="banner-section">
+        <img
+          src={bannerImage}
+          alt="Baby Clothes Store Banner"
+          className="banner-image"
+        />
+      </div>
 
-        <motion.section className="features-section" variants={itemVariants}>
-          <h2>Why Choose Us?</h2>
-          <div className="features-grid">
-            {features.map((feature, index) => (
-              <motion.div
-                key={index}
-                className="feature-card"
-                variants={itemVariants}
-                whileHover={{ y: -10 }}
-              >
-                <div className="feature-video-background">
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="feature-background-video"
-                  >
-                    <source src={feature.video} type="video/mp4" />
-                  </video>
-                </div>
-                <motion.div 
-                  className="feature-content"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.3 }}
-                >
-                  <div className="feature-icon">
-                    {feature.icon}
-                  </div>
-                  <h3>{feature.title}</h3>
-                  <p>{feature.description}</p>
-                </motion.div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.section>
-      </motion.main>
+      {/* Top Selling Products Section */}
+      <section className="products-section">
+        <h2 className="section-title">Most Popular Items</h2>
+        <div className="products-grid">
+          {topProducts.map((product) => (
+            <TopSellingProduct
+              key={product.id}
+              title={product.title}
+              price={product.price}
+              image={product.image}
+            />
+          ))}
+        </div>
+      </section>
+
+      {/* CTA Button */}
+      <div className="cta-section">
+        <button 
+          className="cta-button"
+          onClick={handleStoreClick}
+        >
+          Go to Store
+        </button>
+      </div>
     </div>
   );
-};
-
-export default HomePage;
+}

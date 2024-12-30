@@ -213,14 +213,19 @@ export const Cart = ({ cart, removeFromCart, updateQuantity, total }) => {
                       exit={{ opacity: 0, x: 20 }}
                     >
                       <div className="cart-item-image">
-                        <img src={item.image} alt={item.title} />
+                        <img src={item.imgSrc} alt={item.name} />
                       </div>
                       <div className="cart-item-details">
-                        <h3>{item.title}</h3>
-                        <p className="cart-item-price">{formatPrice(item.price)}</p>
-                        {item.description && (
-                          <p className="cart-item-description">{item.description}</p>
-                        )}
+                        <h3>{item.name}</h3>
+                        <p className="cart-item-price">€{item.price}</p>
+                        <div className="cart-item-options">
+                          {item.selectedSize && (
+                            <span className="cart-item-size">Size: {item.selectedSize}</span>
+                          )}
+                          {item.selectedColor && (
+                            <span className="cart-item-color">Color: {item.selectedColor}</span>
+                          )}
+                        </div>
                         <div className="quantity-controls">
                           <motion.button
                             whileHover={{ scale: 1.1 }}
@@ -243,7 +248,7 @@ export const Cart = ({ cart, removeFromCart, updateQuantity, total }) => {
                         className="remove-button"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.95 }}
-                        onClick={() => removeFromCart(item.id)}
+                        onClick={() => removeFromCart(item.cartId)}
                       >
                         <X size={20} />
                       </motion.button>

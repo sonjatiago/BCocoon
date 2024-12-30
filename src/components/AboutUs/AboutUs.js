@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './AboutUs.css';
-import logo2Image from '../../assets/logo2.png';
+import memberPhoto from '../../assets/logos/member.jpg';
 
 
 export const AboutUs = () => {
@@ -28,20 +28,10 @@ export const AboutUs = () => {
 
   const teamMembers = [
     {
-      name: "Jane Doe",
+      name: "Isabel Esteves",
       role: "Founder & Creative Director",
-      description: "With over 15 years of experience in contemporary art."
+      description: "With 30+ years of experience, Isabel crafts high-quality, stylish, and comfortable baby clothes with love and care."
     },
-    {
-      name: "John Smith",
-      role: "Lead Curator",
-      description: "Specializing in emerging artists and contemporary movements."
-    },
-    {
-      name: "Emma Wilson",
-      role: "Art Consultant",
-      description: "Expert in art acquisition and collection management."
-    }
   ];
 
   return (
@@ -51,40 +41,6 @@ export const AboutUs = () => {
       animate="visible"
       variants={containerVariants}
     >
-      <motion.section 
-  className="about-hero relative min-h-screen bg-cover bg-center bg-no-repeat" 
-  style={{ backgroundImage: `url(${logo2Image})` }}
-  variants={itemVariants}
->
-  {/* Optional overlay for better text readability */}
-  <div className="absolute inset-0 bg-black/30" />
-  
-  {/* Content container */}
-  <div className="relative z-10 flex flex-col items-center justify-center h-full text-white p-6">
-  </div>
-</motion.section>
-
-      <motion.section className="about-story" variants={itemVariants}>
-        <h2>Our Story</h2>
-        <p>
-          Founded in 2020, OKOA Gallery has become a cornerstone of Tallinn's contemporary art scene. 
-          Our mission is to bridge the gap between artists and art lovers, creating a space where 
-          creativity flourishes and new perspectives are celebrated.
-        </p>
-      </motion.section>
-
-      <motion.section className="about-vision" variants={itemVariants}>
-  <div className="vision-content">
-    <h2>Our Vision</h2>
-    <p>
-      We believe in making contemporary art accessible to everyone while supporting emerging 
-      artists and fostering a community of art enthusiasts. Our gallery serves as a platform 
-      for artistic expression and cultural exchange, bringing together diverse perspectives 
-      and innovative ideas in the heart of Tallinn.
-    </p>
-  </div>
-</motion.section>
-
       <motion.section className="team-section" variants={itemVariants}>
         <h2>Our Team</h2>
         <div className="team-grid">
@@ -95,7 +51,7 @@ export const AboutUs = () => {
               variants={itemVariants}
             >
               <div className="member-photo">
-                <img src={`/api/placeholder/150/150`} alt={member.name} />
+              <img src={memberPhoto} alt={member.name} />
               </div>
               <h3>{member.name}</h3>
               <h4>{member.role}</h4>
@@ -104,18 +60,33 @@ export const AboutUs = () => {
           ))}
         </div>
       </motion.section>
-
-      <motion.section className="contact-section" variants={itemVariants}>
-        <h2>Visit Us</h2>
+      <motion.section className="about-story" variants={itemVariants}>
+        <h2>Our Story</h2>
         <p>
-          Experience our collection in person and join us for regular exhibitions, 
-          artist talks, and cultural events.
+        Isabel's journey started in her childhood, inspired by her mother, a skilled sewist. 
+        With sewing tools and fabrics all around her, Isabel quickly fell in love with creating 
+        and learned the art of sewing at an early age. Although she aspired to study fashion design,
+         life took her in a different direction for a while. However, when her daughter, Carolina,
+          was born, the need to stay home and care for her, combined with the global challenges
+           of the COVID-19 pandemic, ignited Isabel’s creativity. She began making baby clothes,
+            and from that passion, BCocoon Kids was born. Over the years, Isabel has crafted more 
+            than 500 unique products, selling them to families worldwide. Today, her store continues to flourish, built on the love, skill, and dedication she has nurtured since childhood, providing parents with beautifully crafted pieces for their little ones.
         </p>
-        <div className="contact-info">
-          <p>Opening Hours: Monday - Friday: 10:00 - 18:00</p>
-          <p>Weekend: 11:00 - 16:00</p>
-        </div>
       </motion.section>
+
+      <motion.section className="about-vision" variants={itemVariants}>
+  <div className="vision-content">
+    <h2>Our Vision</h2>
+    <p>
+    At BCocoon Kids, we envision a world where parents can find high-quality,
+     comfortable, and beautifully crafted baby clothes they can trust and cherish.
+    Driven by our passion for craftsmanship and a love for design, we strive to offer
+     products that nurture both babies and families around the globe, all while celebrating 
+     creativity, comfort, and timeless style.
+    </p>
+  </div>
+</motion.section>
+
     </motion.div>
   );
 };

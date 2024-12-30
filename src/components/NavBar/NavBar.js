@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ShoppingCart } from 'lucide-react';
 import './NavBar.css';
-import Logo from '../../assets/logo.png';
+import Logo from '../../assets/logos/lg1.jpg';
 
 export const NavBar = ({ cartItemCount }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +11,7 @@ export const NavBar = ({ cartItemCount }) => {
 
   const navItems = [
     { path: '/', label: 'Home' },
-    { path: '/ourart', label: 'Our Art' },
+    { path: '/Store', label: 'Store' },
     { path: '/aboutus', label: 'About Us' },
     { path: '/location', label: 'Location' },
   ];

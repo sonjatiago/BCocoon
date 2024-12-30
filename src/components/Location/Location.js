@@ -27,9 +27,10 @@ export const Location = () => {
     }
   };
 
-  // Tallinn coordinates
-  const latitude = 59.437;
-  const longitude = 24.7535;
+// Coordinates for Rua Luís de Camões 44, Benavente, Portugal
+const latitude = 38.98116115340248;
+const longitude = -8.808900575548556;
+
 
   return (
     <div className="location-section">
@@ -43,11 +44,11 @@ export const Location = () => {
           <motion.div className="location-info" variants={contentVariants}>
             <h2>Visit Our Gallery</h2>
             <div className="address-details">
-              <p className="address">Viru väljak 4/6</p>
-              <p className="city">10111 Tallinn, Estonia</p>
+              <p className="address">Rua Luís de Camões 44, Benavente</p>
+              <p className="city">Benavente, Portugal 2130-062</p>
               <div className="contact-details">
-                <p>Phone: +372 123 4567</p>
-                <p>Email: info@okoagallery.ee</p>
+                <p>Phone: +351 962 908 845</p>
+                <p>Email: info@bcocoonkids.pt</p>
               </div>
               <div className="hours">
                 <h3>Opening Hours</h3>

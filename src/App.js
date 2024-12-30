@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 // Import components
 import { NavBar } from "./components/NavBar/NavBar";
 import { HomePage } from "./components/HomePage/HomePage";
-import { OurArt } from "./components/OurArt/OurArt";
+import { Store } from "./components/Store/Store";
 import { Location } from "./components/Location/Location";
 import { Cart } from "./components/Cart/Cart";
 import { AboutUs } from "./components/AboutUs/AboutUs";
@@ -95,8 +95,8 @@ export const App = () => {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route 
-                path="/ourart" 
-                element={<OurArt addToCart={addToCart} />} 
+                path="/store" 
+                element={<Store addToCart={addToCart} />} 
               />
               <Route path="/location" element={<Location />} />
               <Route path="/aboutus" element={<AboutUs />} />
