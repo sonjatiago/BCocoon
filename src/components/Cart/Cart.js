@@ -132,9 +132,9 @@ export const Cart = ({ cart, removeFromCart, updateQuantity, total }) => {
   };
 
   const formatPrice = (price) => {
-    return new Intl.NumberFormat('en-US', {
+    return new Intl.NumberFormat('en-GB', {
       style: 'currency',
-      currency: 'USD'
+      currency: 'EUR'
     }).format(price);
   };
 

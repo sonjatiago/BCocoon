@@ -93,7 +93,7 @@ export const Footer = () => {
 
       <div className="footer-bottom">
         <div className="footer-bottom-content">
-          <p>&copy; {currentYear} B Cocoon Kids. All rights reserved.</p>
+          <p>&copy; {currentYear} Made by Tiago Guimaraes. B Cocoon Kids. All rights reserved.</p>
           <p>
             <a 
               href="https://linktr.ee/bcocoonkids" 
