@@ -146,8 +146,13 @@ const artworks = [
     dimensions: ['1-3 months', '3-6 months', '6-9 months', '9-12 months'],
     colors: [
       { name: 'Natural', value: '#F5E6E0' },
-      { name: 'Cream', value: '#F8F4E3' },
-      { name: 'Light Grey', value: '#D3D3D3' }
+      { name: 'Pink', value: '#B4979F' },
+      { name: 'Brown', value: '#473525' },
+      { name: 'Light Blue', value: '#597978' },
+      { name: 'Dark Blue', value: '#516368' },
+      { name: 'Red', value: '#A8112F' },
+      { name: 'Yellow', value: '#B18C3B' },
+      { name: 'Cream', value: '#B0AA9E' },
     ],
     features: [
       'Premium 100% cotton material',
@@ -172,6 +177,16 @@ const artworks = [
     images: [bb1, bb2, bb3, bb4, bb5, bb6, bb7, bb8],
     description: 'Our classic baby bonnet is designed to keep your little one cozy and stylish. Made from soft, breathable fabric with a gentle elastic band for comfort, this bonnet provides protection while looking adorably vintage.',
     dimensions: ['1-3 months', '3-6 months', '6-9 months', '9-12 months'],
+    colors: [
+      { name: 'Natural', value: '#F5E6E0' },
+      { name: 'Pink', value: '#B4979F' },
+      { name: 'Brown', value: '#473525' },
+      { name: 'Light Blue', value: '#597978' },
+      { name: 'Dark Blue', value: '#516368' },
+      { name: 'Red', value: '#A8112F' },
+      { name: 'Yellow', value: '#B18C3B' },
+      { name: 'Cream', value: '#B0AA9E' },
+    ],
     features: [
       'Soft, breathable cotton blend',
       'Gentle elastic for secure fit',
@@ -195,6 +210,16 @@ const artworks = [
     images: [bd1, bd2, bd3, bd4, bd5, bd6, bd7],
     description: 'This charming Fox doudou set includes a lovey blanket and matching bib, perfect for soothing and practical use. The set is crafted from ultra-soft materials specifically chosen for sensitive baby skin.',
     dimensions: ['1-3 months', '3-6 months', '6-9 months', '9-12 months'],
+    colors: [
+      { name: 'Natural', value: '#F5E6E0' },
+      { name: 'Pink', value: '#B4979F' },
+      { name: 'Brown', value: '#473525' },
+      { name: 'Light Blue', value: '#597978' },
+      { name: 'Dark Blue', value: '#516368' },
+      { name: 'Red', value: '#A8112F' },
+      { name: 'Yellow', value: '#B18C3B' },
+      { name: 'Cream', value: '#B0AA9E' },
+    ],
     features: [
       'Ultra-soft plush material',
       'Hypoallergenic filling',
@@ -218,6 +243,16 @@ const artworks = [
     images: [bs1, bs2, bs3, bs4, bs5, bs6, bs7, bs8, bs9, bs10],
     description: 'These handcrafted baby shoes combine style with practicality. Made with soft, flexible soles perfect for developing feet, these shoes feature easy-on design and secure closures to stay on active little feet.',
     dimensions: ['1-3 months', '3-6 months', '6-9 months', '9-12 months'],
+    colors: [
+      { name: 'Natural', value: '#F5E6E0' },
+      { name: 'Pink', value: '#B4979F' },
+      { name: 'Brown', value: '#473525' },
+      { name: 'Light Blue', value: '#597978' },
+      { name: 'Dark Blue', value: '#516368' },
+      { name: 'Red', value: '#A8112F' },
+      { name: 'Yellow', value: '#B18C3B' },
+      { name: 'Cream', value: '#B0AA9E' },
+    ],
     features: [
       'Soft, flexible soles',
       'Non-slip bottom texture',
@@ -241,6 +276,16 @@ const artworks = [
     images: [wb1, wb2, wb3, wb4, wb5, wb6, wb7, wb8],
     description: 'Our premium three-layer waffle blanket provides the perfect combination of warmth and breathability. The unique waffle texture adds visual interest while creating air pockets for optimal temperature regulation.',
     dimensions: ['1-3 months', '3-6 months', '6-9 months', '9-12 months'],
+    colors: [
+      { name: 'Natural', value: '#F5E6E0' },
+      { name: 'Pink', value: '#B4979F' },
+      { name: 'Brown', value: '#473525' },
+      { name: 'Light Blue', value: '#597978' },
+      { name: 'Dark Blue', value: '#516368' },
+      { name: 'Red', value: '#A8112F' },
+      { name: 'Yellow', value: '#B18C3B' },
+      { name: 'Cream', value: '#B0AA9E' },
+    ],
     features: [
       'Three-layer construction',
       'Breathable waffle texture',
@@ -264,6 +309,16 @@ const artworks = [
     images: [bj1, bj2, bj3, bj4, bj5, bj6, bj7, bj8, bj9, bj10],
     description: 'This adorable set features a comfortable jumpsuit and matching bunny holder. The jumpsuit is designed for easy dressing with snap closures, while the bunny holder keeps pacifiers clean and within reach.',
     dimensions: ['1-3 months', '3-6 months', '6-9 months', '9-12 months'],
+    colors: [
+      { name: 'Natural', value: '#F5E6E0' },
+      { name: 'Pink', value: '#B4979F' },
+      { name: 'Brown', value: '#473525' },
+      { name: 'Light Blue', value: '#597978' },
+      { name: 'Dark Blue', value: '#516368' },
+      { name: 'Red', value: '#A8112F' },
+      { name: 'Yellow', value: '#B18C3B' },
+      { name: 'Cream', value: '#B0AA9E' },
+    ],
     features: [
       'Soft cotton jumpsuit',
       'Coordinated bunny holder',
@@ -287,6 +342,16 @@ const artworks = [
     images: [sb1, sb2, sb3, sb4, sb5, sb6],
     description: 'This elegant set combines our handcrafted espadrille-style baby shoes with a matching bow headband. Perfect for special occasions, the set comes in a beautiful presentation box.',
     dimensions: ['1-3 months', '3-6 months', '6-9 months', '9-12 months'],
+    colors: [
+      { name: 'Natural', value: '#F5E6E0' },
+      { name: 'Pink', value: '#B4979F' },
+      { name: 'Brown', value: '#473525' },
+      { name: 'Light Blue', value: '#597978' },
+      { name: 'Dark Blue', value: '#516368' },
+      { name: 'Red', value: '#A8112F' },
+      { name: 'Yellow', value: '#B18C3B' },
+      { name: 'Cream', value: '#B0AA9E' },
+    ],
     features: [
       'Coordinated design',
       'Soft sole shoes',
@@ -310,6 +375,16 @@ const artworks = [
     images: [pl1, pl2, pl3, pl4, pl5, pl6, pl7, pl8],
     description: 'This delicate pink linen jumpsuit features charming daisy flower embroidery. Made from breathable linen, it\'s perfect for warm weather while maintaining a dressy appearance.',
     dimensions: ['1-3 months', '3-6 months', '6-9 months', '9-12 months'],
+    colors: [
+      { name: 'Natural', value: '#F5E6E0' },
+      { name: 'Pink', value: '#B4979F' },
+      { name: 'Brown', value: '#473525' },
+      { name: 'Light Blue', value: '#597978' },
+      { name: 'Dark Blue', value: '#516368' },
+      { name: 'Red', value: '#A8112F' },
+      { name: 'Yellow', value: '#B18C3B' },
+      { name: 'Cream', value: '#B0AA9E' },
+    ],
     features: [
       'Premium linen fabric',
       'Hand-embroidered daisies',
@@ -333,6 +408,16 @@ const artworks = [
     images: [lj1, lj2, lj3, lj4, lj5, lj6, lj7, lj8],
     description: 'Our linen-cotton blend jumpsuit offers the perfect balance of style and comfort for summer babies. The breathable fabric blend keeps baby cool while the classic design ensures timeless appeal.',
     dimensions: ['1-3 months', '3-6 months', '6-9 months', '9-12 months'],
+    colors: [
+      { name: 'Natural', value: '#F5E6E0' },
+      { name: 'Pink', value: '#B4979F' },
+      { name: 'Brown', value: '#473525' },
+      { name: 'Light Blue', value: '#597978' },
+      { name: 'Dark Blue', value: '#516368' },
+      { name: 'Red', value: '#A8112F' },
+      { name: 'Yellow', value: '#B18C3B' },
+      { name: 'Cream', value: '#B0AA9E' },
+    ],
     features: [
       'Linen-cotton blend',
       'Breathable weave',
@@ -356,6 +441,16 @@ const artworks = [
     images: [bx1, bx2, bx3, bx4, bx5, bx6],
     description: 'Our welcome home baby box is thoughtfully curated with essential items for newborns. Each item is selected for quality and practicality, presented in a keepsake box perfect for gifting.',
     dimensions: ['1-3 months', '3-6 months', '6-9 months', '9-12 months'],
+    colors: [
+      { name: 'Natural', value: '#F5E6E0' },
+      { name: 'Pink', value: '#B4979F' },
+      { name: 'Brown', value: '#473525' },
+      { name: 'Light Blue', value: '#597978' },
+      { name: 'Dark Blue', value: '#516368' },
+      { name: 'Red', value: '#A8112F' },
+      { name: 'Yellow', value: '#B18C3B' },
+      { name: 'Cream', value: '#B0AA9E' },
+    ],
     features: [
       'Curated essentials',
       'Premium gift box',
@@ -379,6 +474,11 @@ const artworks = [
     images: [ls1, ls2, ls3, ls4, ls5, ls6, ls7, ls8, ls9],
     description: 'These handcrafted linen shoes combine elegance with comfort for your newborn. The breathable linen upper and soft sole design make them perfect for warm weather and special occasions.',
     dimensions: ['1-3 months', '3-6 months', '6-9 months', '9-12 months'],
+    colors: [
+      { name: 'Natural', value: '#F5E6E0' },
+      { name: 'Cream', value: '#F8F4E3' },
+      { name: 'Light Grey', value: '#D3D3D3' }
+    ],
     features: [
       'Natural linen upper',
       'Soft flexible sole',
@@ -401,6 +501,11 @@ const artworks = [
       imgSrc: dd1,
       images: [dd1, dd2, dd3, dd4, dd5, dd6, dd7, dd8, dd9, dd10, dd11, dd12],
       description: 'This beautiful baby animal doudou lovey blanket is perfect for your little baby. Crafted with soft, child-safe materials, it provides comfort and companionship for your little one.',
+      colors: [
+        { name: 'Natural', value: '#F5E6E0' },
+        { name: 'Cream', value: '#F8F4E3' },
+        { name: 'Light Grey', value: '#D3D3D3' }
+      ],
       features: [
         'Super soft and cuddly texture',
         'Safe for all ages',
