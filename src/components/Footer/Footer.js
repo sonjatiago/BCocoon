@@ -5,6 +5,7 @@ import { FaEtsy, FaPinterest } from 'react-icons/fa';
 import ScrollLink from '../../components/ScrollLink';
 import './Footer.css';
 import logo from '../../assets/logos/lg1.jpg';
+import Logo2 from '../../assets/logos/lg2.png';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -92,21 +93,35 @@ export const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <div className="footer-bottom-content">
-          <p>&copy; {currentYear} Made by Tiago Guimaraes. B Cocoon Kids. All rights reserved.</p>
-          <p>
-            <a 
-              href="https://linktr.ee/bcocoonkids" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="linktree-link"
-            >
-              linktr.ee/bcocoonkids
-            </a>
-            
-          </p>
-        </div>
+      <div className="footer-bottom-content">
+        <p>&copy; {currentYear} Made by TG Web Design. B Cocoon Kids. All rights reserved.</p>
+        <p>
+          <a 
+            href="https://linktr.ee/bcocoonkids" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="linktree-link"
+          >
+            linktr.ee/bcocoonkids
+          </a>
+        </p>
+        {/* Add the logo here */}
+        <p>
+          <a 
+            href="https://tgwebdesign.netlify.app/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <img 
+              src={Logo2} 
+              alt="TG Web Design Logo" 
+              className="footer-logo2" 
+              style={{ width: "60px", height: "auto" }} // Optional inline style
+            />
+          </a>
+        </p>
       </div>
+    </div>
     </footer>
   );
 };
